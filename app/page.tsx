@@ -1,25 +1,9 @@
-'use client'
-import { Sandpack } from '@codesandbox/sandpack-react'
-export default function Page() {
+import { SandpackCode } from "./components/SandpackCode";
+
+export default function Home() {
   return (
     <div>
-      <Sandpack
-        files={{
-          '/index.js': {}
-        }}
-        theme='light'
-        template='vanilla'
-        options={{
-          showLineNumbers: true,
-          autorun: true,
-          autoReload: true,
-          showConsole: true,
-          showConsoleButton: true,
-          showTabs: true,
-          closableTabs: true,
-          editorHeight: '40vh'
-        }}
-      />
+      <SandpackCode />
     </div>
-  )
+  );
 }
